@@ -1,0 +1,23 @@
+query GetPosts {
+  getPosts {
+    id
+    title
+    content
+  }
+}
+
+query GetPost {
+  getPost(id: "a0a0a0a0-a0a0-a0a0-a0a0-a0a0a0a0a0a0") {
+    id
+    title
+    content
+  }
+}
+
+mutation CreatePost {
+  createPost(newPost: { title: "Test Title", content: "Test Content" }) {
+    id
+    title
+    content
+  }
+}
